@@ -91,7 +91,7 @@ function FeaturedProducts({ onNavigate }) {
               initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
               transition={{ duration: 0.3, delay: i * 0.04 }}
               onClick={() => onNavigate('controles')}
-              className="bg-white rounded-xl overflow-hidden cursor-pointer group hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-200">
+              className="bg-white rounded-xl overflow-hidden cursor-pointer group hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] transition-all duration-300 active:scale-95">
               <div className="p-4 pb-3">
                 <img src={item.img} alt={item.codigo} className="w-full h-28 sm:h-32 object-contain" />
               </div>
@@ -153,6 +153,9 @@ export default function Hero({ onNavigate }) {
         <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-blue-600/8 rounded-full blur-[120px]" />
         <div className="absolute bottom-[-100px] right-[-100px] w-[400px] h-[400px] bg-violet-600/5 rounded-full blur-[100px]" />
         <div className="absolute top-1/3 left-[-50px] w-[300px] h-[300px] bg-blue-500/3 rounded-full blur-[80px]" />
+        {/* Neon side lines */}
+        <div className="absolute left-0 top-[10%] h-[80%] w-[2px] bg-gradient-to-b from-transparent via-blue-500 to-transparent opacity-40 neon-pulse" style={{ boxShadow: '0 0 12px #3b82f6, 0 0 30px rgba(59,130,246,0.3)' }} />
+        <div className="absolute right-0 top-[10%] h-[80%] w-[2px] bg-gradient-to-b from-transparent via-violet-500 to-transparent opacity-40 neon-pulse" style={{ boxShadow: '0 0 12px #8b5cf6, 0 0 30px rgba(139,92,246,0.3)' }} />
 
         <div className="relative z-10 text-center max-w-4xl mx-auto py-32">
           <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
@@ -186,7 +189,7 @@ export default function Hero({ onNavigate }) {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <button onClick={() => onNavigate('controles')}
-              className="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold text-lg rounded-xl transition-all shadow-lg shadow-blue-600/25 hover:shadow-blue-500/40 cursor-pointer">
+              className="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold text-lg rounded-xl transition-all shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:shadow-[0_0_35px_rgba(59,130,246,0.6)] cursor-pointer active:scale-95">
               Ver catálogo
             </button>
             <a href={WHATSAPP} target="_blank" rel="noopener noreferrer"
@@ -277,15 +280,17 @@ export default function Hero({ onNavigate }) {
 
       {/* Trust */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 border-t border-white/5">
-        <div className="max-w-5xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { icon: '🚚', t: 'Envíos a todo el país', d: 'Tu pedido en la puerta de tu casa' },
-            { icon: '💬', t: 'Atención por WhatsApp', d: 'Respuesta inmediata' },
-            { icon: '🛡️', t: 'Garantía incluida', d: 'En todos los productos' },
-            { icon: '⚡', t: 'Stock permanente', d: 'Disponibilidad inmediata' },
+            { icon: '🚚', t: 'Envíos a todo el país', d: 'Tu pedido en la puerta de tu casa', color: 'blue' },
+            { icon: '💬', t: 'Atención por WhatsApp', d: 'Respuesta inmediata', color: 'violet' },
+            { icon: '🛡️', t: 'Garantía incluida', d: 'En todos los productos', color: 'blue' },
+            { icon: '⚡', t: 'Stock permanente', d: 'Disponibilidad inmediata', color: 'violet' },
           ].map((b, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-              transition={{ delay: i * 0.08 }} className="text-center">
+              whileHover={{ y: -5, scale: 1.03 }}
+              transition={{ delay: i * 0.08 }}
+              className={`text-center p-5 rounded-xl bg-[#111] ${b.color === 'blue' ? 'neon-border-blue' : 'neon-border-violet'} transition-all duration-300 cursor-default`}>
               <div className="text-3xl mb-3">{b.icon}</div>
               <p className="font-bold text-white text-sm">{b.t}</p>
               <p className="text-neutral-500 text-xs mt-1">{b.d}</p>
@@ -296,7 +301,7 @@ export default function Hero({ onNavigate }) {
 
       {/* CTA */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 border-t border-white/5">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="relative max-w-2xl mx-auto text-center p-10 rounded-2xl bg-[#111] neon-border-blue">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">¿No encontrás lo que buscás?</h2>
           <p className="text-neutral-500 text-sm mb-8">Escribinos y te ayudamos a encontrar el producto exacto.</p>
           <a href={WHATSAPP} target="_blank" rel="noopener noreferrer"

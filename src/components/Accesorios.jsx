@@ -62,8 +62,8 @@ export default function Accesorios() {
             {items.map((item, i) => (
               <motion.div key={item.id} initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.25, delay: Math.min(i * 0.03, 0.4) }}
-                whileHover={{ y: -3 }} whileTap={{ scale: 0.98 }} onClick={() => setSelected(item)}
-                className="bg-white rounded-xl overflow-hidden cursor-pointer hover:shadow-lg hover:shadow-black/30 transition-all duration-200">
+                whileHover={{ y: -5 }} whileTap={{ scale: 0.95 }} onClick={() => setSelected(item)}
+                className="bg-white rounded-xl overflow-hidden cursor-pointer hover:shadow-[0_0_20px_rgba(139,92,246,0.25)] border border-transparent hover:border-violet-500/30 transition-all duration-300">
                 <div className="p-4 pb-3"><img src={item.img} alt={item.nombre} className="w-full h-28 sm:h-32 object-contain" /></div>
                 <div className="bg-neutral-900 px-3 py-3 border-t border-neutral-800">
                   <p className="font-bold text-white text-sm">{item.nombre}</p>

@@ -38,3 +38,114 @@ body {
   background: rgba(37, 99, 235, 0.3);
   color: #fff;
 }
+
+/* Custom cursor */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: #3b82f6;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: screen;
+  will-change: transform;
+  box-shadow: 0 0 10px #3b82f6, 0 0 20px rgba(59, 130, 246, 0.4);
+}
+
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid rgba(139, 92, 246, 0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  will-change: transform;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.15);
+}
+
+/* Click ripple */
+.click-ripple {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9997;
+  transform: translate(-50%, -50%);
+  animation: ripple-expand 0.7s ease-out forwards;
+  border: 2px solid rgba(59, 130, 246, 0.6);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+@keyframes ripple-expand {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+  }
+}
+
+/* Neon glow borders */
+.neon-border-blue {
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.15), inset 0 0 5px rgba(59, 130, 246, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+.neon-border-blue:hover {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3), 0 0 40px rgba(59, 130, 246, 0.1), inset 0 0 10px rgba(59, 130, 246, 0.05);
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.neon-border-violet {
+  box-shadow: 0 0 5px rgba(139, 92, 246, 0.15), inset 0 0 5px rgba(139, 92, 246, 0.05);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+.neon-border-violet:hover {
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.3), 0 0 40px rgba(139, 92, 246, 0.1), inset 0 0 10px rgba(139, 92, 246, 0.05);
+  border-color: rgba(139, 92, 246, 0.5);
+}
+
+/* Neon side lines */
+.neon-line-left::before,
+.neon-line-right::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  width: 2px;
+  border-radius: 2px;
+}
+.neon-line-left::before {
+  left: 0;
+  background: linear-gradient(to bottom, transparent, #3b82f6, transparent);
+  box-shadow: 0 0 8px #3b82f6, 0 0 20px rgba(59, 130, 246, 0.3);
+}
+.neon-line-right::after {
+  right: 0;
+  background: linear-gradient(to bottom, transparent, #8b5cf6, transparent);
+  box-shadow: 0 0 8px #8b5cf6, 0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+/* Neon pulse animation for accents */
+@keyframes neon-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.neon-pulse {
+  animation: neon-pulse 3s ease-in-out infinite;
+}
+
+@media (pointer: coarse) {
+  .cursor-dot, .cursor-ring { display: none; }
+}

@@ -10,6 +10,7 @@ import Extras from './components/Extras'
 import Footer from './components/Footer'
 import FloatingButtons from './components/FloatingButtons'
 import Particles from './components/Particles'
+import CursorFollower from './components/CursorFollower'
 
 const sections = {
   controles: Catalogo,
@@ -62,6 +63,7 @@ function App() {
         <Footer onNavigate={navigate} />
       </div>
       <FloatingButtons />
+      <CursorFollower />
     </div>
   )
 }

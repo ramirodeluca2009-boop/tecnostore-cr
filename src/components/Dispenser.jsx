@@ -21,7 +21,7 @@ export default function Dispenser() {
 
         <motion.div
           initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}
-          className="flex flex-col md:flex-row items-center gap-8 bg-[#141414] rounded-2xl overflow-hidden border border-white/5"
+          className="flex flex-col md:flex-row items-center gap-8 bg-[#141414] rounded-2xl overflow-hidden neon-border-blue transition-all duration-300"
         >
           <div className="w-full md:w-1/2 bg-white p-8 flex items-center justify-center">
             {img ? (

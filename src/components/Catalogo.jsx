@@ -39,7 +39,31 @@ function Modal({ item, onClose }) {
         </div>
         <div className="p-5">
           <p className="font-bold text-white text-lg">{item.codigo}</p>
-          <p className="text-neutral-500 text-sm mt-1 mb-5">Compatible con: {item.marcas}</p>
+          <p className="text-neutral-500 text-sm mt-1 mb-4">Compatible con: {item.marcas}</p>
+
+          <div className="space-y-2.5 mb-4 text-sm">
+            <div className="flex gap-2.5 items-start">
+              <span className="text-blue-400 mt-0.5">✦</span>
+              <p className="text-neutral-300"><span className="text-white font-medium">Es un reemplazo:</span> Funciona igual que el original</p>
+            </div>
+            <div className="flex gap-2.5 items-start">
+              <span className="text-blue-400 mt-0.5">✦</span>
+              <p className="text-neutral-300"><span className="text-white font-medium">¿Cómo se usa?:</span> Le ponés las pilas y anda. No hay que configurar nada</p>
+            </div>
+            <div className="flex gap-2.5 items-start">
+              <span className="text-blue-400 mt-0.5">✦</span>
+              <p className="text-neutral-300"><span className="text-white font-medium">Garantía:</span> 3 meses directo con nosotros</p>
+            </div>
+            <div className="flex gap-2.5 items-start">
+              <span className="text-blue-400 mt-0.5">✦</span>
+              <p className="text-neutral-300"><span className="text-white font-medium">Envíos</span> a todo el país con Andreani</p>
+            </div>
+          </div>
+
+          <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg px-3 py-2.5 mb-5">
+            <p className="text-amber-400 text-xs leading-relaxed">⚠️ NO ES UNIVERSAL. Verificá que tu modelo figure en la lista de marcas compatibles antes de consultar.</p>
+          </div>
+
           <a
             href={`${WHATSAPP}?text=${encodeURIComponent(`Hola! Me interesa el control ${item.codigo}, compatible con ${item.marcas}. ¿Tienen stock?`)}`}
             target="_blank" rel="noopener noreferrer"
@@ -88,7 +112,7 @@ export default function Catalogo() {
               placeholder="Buscar marca o código..."
               value={search}
               onChange={e => setSearch(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 bg-[#141414] border border-white/10 rounded-xl text-white text-sm placeholder-neutral-500 focus:outline-none focus:border-blue-500/50 transition-colors"
+              className="w-full pl-10 pr-4 py-2.5 bg-[#141414] border border-white/10 rounded-xl text-white text-sm placeholder-neutral-500 focus:outline-none focus:border-blue-500/50 focus:shadow-[0_0_15px_rgba(59,130,246,0.2)] transition-all duration-300"
             />
           </div>
         </div>
@@ -100,10 +124,10 @@ export default function Catalogo() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.25, delay: Math.min(i * 0.02, 0.4) }}
-              whileHover={{ y: -3 }}
-              whileTap={{ scale: 0.98 }}
+              whileHover={{ y: -5 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => setSelected(item)}
-              className="bg-white rounded-xl overflow-hidden cursor-pointer hover:shadow-lg hover:shadow-black/30 transition-all duration-200"
+              className="bg-white rounded-xl overflow-hidden cursor-pointer hover:shadow-[0_0_20px_rgba(59,130,246,0.25)] transition-all duration-300 border border-transparent hover:border-blue-500/30"
             >
               <div className="p-4 pb-3">
                 <img src={item.img} alt={item.codigo} className="w-full h-28 sm:h-32 object-contain" />

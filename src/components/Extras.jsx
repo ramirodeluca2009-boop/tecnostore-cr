@@ -9,7 +9,7 @@ export default function Extras() {
       <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <motion.div
           initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}
-          className="text-center p-8 sm:p-12 bg-[#141414] rounded-2xl border border-white/5"
+          className="text-center p-8 sm:p-12 bg-[#141414] rounded-2xl neon-border-violet transition-all duration-300"
         >
           <div className="w-16 h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-3xl">🎁</div>
           <h2 className="text-2xl font-bold text-white mb-3">Extras de Temporada</h2>
