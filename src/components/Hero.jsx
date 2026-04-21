@@ -122,8 +122,11 @@ export default function Hero({ onNavigate }) {
         <div className="absolute right-0 top-[10%] h-[80%] w-[2px] bg-gradient-to-b from-transparent via-violet-500 to-transparent opacity-40 neon-pulse" style={{ boxShadow: '0 0 12px #8b5cf6, 0 0 30px rgba(139,92,246,0.3)' }} />
 
         <div className="relative z-10 text-center max-w-4xl mx-auto py-32">
-          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <img src="/images/1002097393.png" alt="TecnoStoreCR" className="h-20 sm:h-24 w-auto mx-auto mb-8 drop-shadow-[0_0_30px_rgba(59,130,246,0.3)]" />
+          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
+            className="flex justify-center mb-10">
+            <img src="/images/1002097393.png" alt="TecnoStoreCR"
+              className="h-[100px] sm:h-[120px] w-auto"
+              style={{ filter: 'drop-shadow(0 0 25px rgba(59,130,246,0.5)) drop-shadow(0 0 50px rgba(139,92,246,0.3))' }} />
           </motion.div>
 
           <motion.h1
