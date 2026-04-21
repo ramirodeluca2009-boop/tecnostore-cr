@@ -1,5 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useMemo } from 'react'
 import { motion } from 'framer-motion'
+import controlesData from '../data/controles.json'
+import joysticksData from '../data/joysticks.json'
+import dispenserData from '../data/dispenser.json'
+import accesoriosData from '../data/accesorios.json'
 
 const WHATSAPP = 'https://wa.me/5492974254894'
 
@@ -54,23 +58,10 @@ const extraImgs = {
 }
 
 function FeaturedProducts({ onNavigate }) {
-  const [items, setItems] = useState([])
-
-  useEffect(() => {
-    fetch('/api/controles')
-      .then(r => r.json())
-      .then(files => {
-        const shuffled = files.sort(() => 0.5 - Math.random())
-        setItems(shuffled.slice(0, 8).map(f => {
-          const name = f.replace(/\.\w+$/, '')
-          const parts = name.split(/\s+/)
-          return { codigo: parts[0], marcas: parts.slice(1).join(', '), img: `/images/controles/${f}` }
-        }))
-      })
-      .catch(() => {})
+  const items = useMemo(() => {
+    const shuffled = [...controlesData].sort(() => 0.5 - Math.random())
+    return shuffled.slice(0, 8)
   }, [])
-
-  if (items.length === 0) return null
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 border-t border-white/5">
@@ -111,39 +102,12 @@ function FeaturedProducts({ onNavigate }) {
   )
 }
 
-function CategoryImages({ id }) {
-  const [img, setImg] = useState(null)
-
-  useEffect(() => {
-    const apiMap = { joysticks: '/api/joysticks', dispenser: '/api/dispenser', accesorios: '/api/accesorios' }
-    const api = apiMap[id]
-    if (!api) return
-    fetch(api).then(r => r.json()).then(files => {
-      if (files.length > 0) {
-        const folder = id === 'dispenser' ? 'dispenser' : id
-        setImg(`/images/${folder}/${files[0]}`)
-      }
-    }).catch(() => {})
-  }, [id])
-
-  return img
-}
-
 export default function Hero({ onNavigate }) {
-  const [catImages, setCatImages] = useState({})
-
-  useEffect(() => {
-    const apis = [
-      { id: 'joysticks', api: '/api/joysticks', folder: 'joysticks' },
-      { id: 'dispenser', api: '/api/dispenser', folder: 'dispenser' },
-      { id: 'accesorios', api: '/api/accesorios', folder: 'accesorios' },
-    ]
-    apis.forEach(({ id, api, folder }) => {
-      fetch(api).then(r => r.json()).then(files => {
-        if (files.length > 0) setCatImages(prev => ({ ...prev, [id]: `/images/${folder}/${files[0]}` }))
-      }).catch(() => {})
-    })
-  }, [])
+  const catImages = {
+    joysticks: joysticksData[0]?.img || null,
+    dispenser: dispenserData[0]?.img || null,
+    accesorios: accesoriosData[0]?.img || null,
+  }
 
   return (
     <div className="w-full">

@@ -1,15 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import controlesData from '../data/controles.json'
 
 const WHATSAPP = 'https://wa.me/5492974254894'
-
-function parseFilename(filename) {
-  const name = filename.replace(/\.\w+$/, '')
-  const parts = name.split(/\s+/)
-  const codigo = parts[0] || ''
-  const marcas = parts.slice(1).join(', ') || 'Universal'
-  return { codigo, marcas, img: `/images/controles/${filename}` }
-}
 
 function Modal({ item, onClose }) {
   useEffect(() => {
@@ -79,16 +72,9 @@ function Modal({ item, onClose }) {
 }
 
 export default function Catalogo() {
-  const [items, setItems] = useState([])
+  const items = controlesData.map((c, i) => ({ id: i, ...c }))
   const [search, setSearch] = useState('')
   const [selected, setSelected] = useState(null)
-
-  useEffect(() => {
-    fetch('/api/controles')
-      .then(r => r.json())
-      .then(files => setItems(files.map((f, i) => ({ id: i, ...parseFilename(f) }))))
-      .catch(() => setItems([]))
-  }, [])
 
   const filtered = items.filter(c =>
     c.codigo.toLowerCase().includes(search.toLowerCase()) ||

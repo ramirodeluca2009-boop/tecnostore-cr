@@ -1,16 +1,10 @@
-import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import dispenserData from '../data/dispenser.json'
 
 const WHATSAPP = 'https://wa.me/5492974254894'
 
 export default function Dispenser() {
-  const [img, setImg] = useState(null)
-
-  useEffect(() => {
-    fetch('/api/dispenser').then(r => r.json())
-      .then(files => { if (files.length > 0) setImg(`/images/dispenser/${files[0]}`) })
-      .catch(() => {})
-  }, [])
+  const img = dispenserData[0]?.img || null
 
   return (
     <section className="w-full py-20 min-h-screen">

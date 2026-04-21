@@ -1,0 +1,337 @@
+[
+  {
+    "codigo": "DTV",
+    "marcas": "DECODIFICADOR",
+    "img": "/images/controles/DTV DECODIFICADOR.jpeg"
+  },
+  {
+    "codigo": "IRF-309",
+    "marcas": "CHROMECAST",
+    "img": "/images/controles/IRF-309 CHROMECAST.jpeg"
+  },
+  {
+    "codigo": "IRF-311",
+    "marcas": "XIAOMI",
+    "img": "/images/controles/IRF-311 XIAOMI.jpeg"
+  },
+  {
+    "codigo": "LCD-419",
+    "marcas": "BGH, TELEFUNKEN, NOBLEX",
+    "img": "/images/controles/LCD-419 BGH TELEFUNKEN NOBLEX.jpeg"
+  },
+  {
+    "codigo": "LCD-424",
+    "marcas": "PHILCO, SANYO, NOBLEX, SANSEI, JVC",
+    "img": "/images/controles/LCD-424 PHILCO SANYO NOBLEX SANSEI JVC.jpeg"
+  },
+  {
+    "codigo": "LCD-430",
+    "marcas": "PHILIPS",
+    "img": "/images/controles/LCD-430 PHILIPS.jpeg"
+  },
+  {
+    "codigo": "LCD-434",
+    "marcas": "SONY",
+    "img": "/images/controles/LCD-434 SONY.jpeg"
+  },
+  {
+    "codigo": "LCD-437",
+    "marcas": "LG",
+    "img": "/images/controles/LCD-437 LG.jpeg"
+  },
+  {
+    "codigo": "LCD-440",
+    "marcas": "HITACHI, SANYO, NOBLEX, TELEFUNKEN, PHILCO, SANSEI, JVC",
+    "img": "/images/controles/LCD-440 HITACHI SANYO NOBLEX TELEFUNKEN PHILCO SANSEI JVC.jpeg"
+  },
+  {
+    "codigo": "LCD-443",
+    "marcas": "SAMSUNG",
+    "img": "/images/controles/LCD-443 SAMSUNG.jpeg"
+  },
+  {
+    "codigo": "LCD-446",
+    "marcas": "HISENSE, TELEFUNKEN, NOBLEX, PHILCO, BGH, SANYO",
+    "img": "/images/controles/LCD-446 HISENSE TELEFUNKEN NOBLEX PHILCO BGH SANYO.jpeg"
+  },
+  {
+    "codigo": "LCD-452",
+    "marcas": "JVC, HITACHI, BGH, HISENSE, TELEFUNKEN, RCA, SANYO, PANAVOX, PHILCO, NOBLEX",
+    "img": "/images/controles/LCD-452 JVC HITACHI BGH HISENSE TELEFUNKEN RCA SANYO PANAVOX PHILCO NOBLEX.jpeg"
+  },
+  {
+    "codigo": "LCD-474",
+    "marcas": "HITACHI, TELEFUNKEN",
+    "img": "/images/controles/LCD-474 HITACHI TELEFUNKEN.jpeg"
+  },
+  {
+    "codigo": "LCD-475",
+    "marcas": "TCL, HITACHI, JVC, PIONEER, SANYO, NOBLEX, PHILCO, DAEWOO",
+    "img": "/images/controles/LCD-475 TCL HITACHI JVC PIONEER SANYO NOBLEX PHILCO DAEWOO.jpeg"
+  },
+  {
+    "codigo": "LCD-477",
+    "marcas": "LG",
+    "img": "/images/controles/LCD-477 LG.jpeg"
+  },
+  {
+    "codigo": "LCD-477-2",
+    "marcas": "LG",
+    "img": "/images/controles/LCD-477-2 LG.jpeg"
+  },
+  {
+    "codigo": "LCD-478",
+    "marcas": "SONY",
+    "img": "/images/controles/LCD-478 SONY.jpeg"
+  },
+  {
+    "codigo": "LCD-486",
+    "marcas": "JVC, MASTER-G, NOBLEX, HITACHI",
+    "img": "/images/controles/LCD-486 JVC MASTER-G NOBLEX HITACHI.jpeg"
+  },
+  {
+    "codigo": "LCD-494",
+    "marcas": "ILO",
+    "img": "/images/controles/LCD-494 ILO.jpeg"
+  },
+  {
+    "codigo": "LCD-500",
+    "marcas": "SANSEI, SANYO, TONOMAC, BGH, HISENSE, JVC, NOBLEX, PHILCO, PIONEER",
+    "img": "/images/controles/LCD-500 SANSEI SANYO TONOMAC BGH HISENSE JVC NOBLEX PHILCO PIONEER.jpeg"
+  },
+  {
+    "codigo": "LCD-502",
+    "marcas": "BGH, NOBLEX, SANYO, SANSEI, HISENSE, JVC",
+    "img": "/images/controles/LCD-502 BGH NOBLEX SANYO SANSEI HISENSE JVC.jpeg"
+  },
+  {
+    "codigo": "LCD-504",
+    "marcas": "TCL, DAEWOO, PHILCO, RCA, HYUNDAI",
+    "img": "/images/controles/LCD-504 TCL DAEWOO PHILCO RCA HYUNDAI.jpeg"
+  },
+  {
+    "codigo": "LCD-504-2",
+    "marcas": "TCL, DAEWOO, PHILCO, RCA, HYUNDAI",
+    "img": "/images/controles/LCD-504-2 TCL DAEWOO PHILCO RCA HYUNDAI.jpeg"
+  },
+  {
+    "codigo": "LCD-506",
+    "marcas": "TONOMAC, DAEWOO, HITACHI, HYUNDAI, RCA, KEN, BROWN",
+    "img": "/images/controles/LCD-506 TONOMAC DAEWOO HITACHI HYUNDAI RCA KEN BROWN.jpeg"
+  },
+  {
+    "codigo": "LCD-509",
+    "marcas": "PHILIPS",
+    "img": "/images/controles/LCD-509 PHILIPS.jpeg"
+  },
+  {
+    "codigo": "LCD-517",
+    "marcas": "HITACHI, TCL, RCA",
+    "img": "/images/controles/LCD-517 HITACHI TCL RCA.jpeg"
+  },
+  {
+    "codigo": "LCD-518",
+    "marcas": "KEN, BROWN, MASTER-G, JAMES",
+    "img": "/images/controles/LCD-518 KEN BROWN MASTER-G JAMES.jpeg"
+  },
+  {
+    "codigo": "LCD-520",
+    "marcas": "SAMSUNG",
+    "img": "/images/controles/LCD-520 SAMSUNG.jpeg"
+  },
+  {
+    "codigo": "LCD-522",
+    "marcas": "SHARP",
+    "img": "/images/controles/LCD-522 SHARP.jpeg"
+  },
+  {
+    "codigo": "LCD-525",
+    "marcas": "LG",
+    "img": "/images/controles/LCD-525 LG.jpeg"
+  },
+  {
+    "codigo": "LCD-529",
+    "marcas": "PHILCO, SANYO",
+    "img": "/images/controles/LCD-529 PHILCO SANYO.jpeg"
+  },
+  {
+    "codigo": "LCD-532",
+    "marcas": "CROWN, MUSTANG, RCA, TCL, HITACHI",
+    "img": "/images/controles/LCD-532 CROWN MUSTANG RCA TCL HITACHI.jpeg"
+  },
+  {
+    "codigo": "LCD-533",
+    "marcas": "RCA, ADMIRAL, PHILCO, GOLDSTAR, SANSEI, HITACHI, NOBLEX",
+    "img": "/images/controles/LCD-533 RCA ADMIRAL PHILCO GOLDSTAR SANSEI HITACHI NOBLEX.jpeg"
+  },
+  {
+    "codigo": "LCD-537",
+    "marcas": "TOSHIBA",
+    "img": "/images/controles/LCD-537 TOSHIBA.jpeg"
+  },
+  {
+    "codigo": "LCD-538",
+    "marcas": "ONN, PHILCO, SANYO",
+    "img": "/images/controles/LCD-538 ONN PHILCO SANYO.jpeg"
+  },
+  {
+    "codigo": "LCD-545",
+    "marcas": "TELEFUNKEN, TOP, HOUSE, KODAK, BGH",
+    "img": "/images/controles/LCD-545 TELEFUNKEN TOP HOUSE KODAK BGH.jpeg"
+  },
+  {
+    "codigo": "LCD-546",
+    "marcas": "AOC",
+    "img": "/images/controles/LCD-546 AOC.jpeg"
+  },
+  {
+    "codigo": "LCD-548",
+    "marcas": "NOBLEX, PHILCO",
+    "img": "/images/controles/LCD-548 NOBLEX PHILCO.jpeg"
+  },
+  {
+    "codigo": "LCD-551",
+    "marcas": "SAMSUNG",
+    "img": "/images/controles/LCD-551 SAMSUNG.jpeg"
+  },
+  {
+    "codigo": "LCD-552",
+    "marcas": "SKYWORTH",
+    "img": "/images/controles/LCD-552 SKYWORTH.jpeg"
+  },
+  {
+    "codigo": "LCD-557",
+    "marcas": "SONY",
+    "img": "/images/controles/LCD-557 SONY.jpeg"
+  },
+  {
+    "codigo": "LCD-560",
+    "marcas": "RCA, TCL, HITACHI, KANJI, ADMIRAL",
+    "img": "/images/controles/LCD-560 RCA TCL HITACHI KANJI ADMIRAL.jpeg"
+  },
+  {
+    "codigo": "LCD-574",
+    "marcas": "AOC",
+    "img": "/images/controles/LCD-574 AOC.jpeg"
+  },
+  {
+    "codigo": "LCD-576",
+    "marcas": "TOP, HOUSE, TELEFUNKEN, SMARTLIFE, BGH, KODAK, DATSUN, IRT",
+    "img": "/images/controles/LCD-576 TOP HOUSE TELEFUNKEN SMARTLIFE BGH KODAK DATSUN IRT.jpeg"
+  },
+  {
+    "codigo": "LCD-581",
+    "marcas": "ENOVA, SMARTLIFE, HORION, ORIZON, CROWN, MUSTANG",
+    "img": "/images/controles/LCD-581 ENOVA SMARTLIFE HORION ORIZON CROWN MUSTANG.jpeg"
+  },
+  {
+    "codigo": "LCD-582",
+    "marcas": "RCA",
+    "img": "/images/controles/LCD-582 RCA.jpeg"
+  },
+  {
+    "codigo": "LCD-584",
+    "marcas": "KANJI, CROWN, MUSTANG, KODAK, CAIXUN, DINAX, MASTER-G",
+    "img": "/images/controles/LCD-584 KANJI CROWN MUSTANG KODAK CAIXUN DINAX MASTER-G.jpeg"
+  },
+  {
+    "codigo": "LCD-584-2",
+    "marcas": "KANJI, CROWN, MUSTANG",
+    "img": "/images/controles/LCD-584-2 KANJI CROWN MUSTANG.jpeg"
+  },
+  {
+    "codigo": "LCD-585",
+    "marcas": "NOBLEX, ADMIRAL, SMARTLIFE, KEN, BROWN",
+    "img": "/images/controles/LCD-585 NOBLEX ADMIRAL SMARTLIFE KEN BROWN.jpeg"
+  },
+  {
+    "codigo": "LCD-591",
+    "marcas": "PHILIPS",
+    "img": "/images/controles/LCD-591 PHILIPS.jpeg"
+  },
+  {
+    "codigo": "LCD-595",
+    "marcas": "NOBLEX, HISENSE, SANSEI, PHILCO, SANYO, TEDGE, BGH",
+    "img": "/images/controles/LCD-595 NOBLEX HISENSE SANSEI PHILCO SANYO TEDGE BGH.jpeg"
+  },
+  {
+    "codigo": "LCD-597",
+    "marcas": "PHILIPS",
+    "img": "/images/controles/LCD-597 PHILIPS.jpeg"
+  },
+  {
+    "codigo": "LCD-598",
+    "marcas": "HYUNDAI, MASTER-G, RECCO, PHILCO, QUASAR, KIOTO, JVC, NEX",
+    "img": "/images/controles/LCD-598 HYUNDAI MASTER-G RECCO PHILCO QUASAR KIOTO JVC NEX.jpeg"
+  },
+  {
+    "codigo": "LCD-600",
+    "marcas": "HYUNDAI, PHILCO, RCA, ONN, NOBLEX",
+    "img": "/images/controles/LCD-600 HYUNDAI PHILCO RCA ONN NOBLEX.jpeg"
+  },
+  {
+    "codigo": "LCD-614",
+    "marcas": "TCL, RCA, ADMIRAL",
+    "img": "/images/controles/LCD-614 TCL RCA ADMIRAL.jpeg"
+  },
+  {
+    "codigo": "LCD-615",
+    "marcas": "PHILCO, NOBLEX, RCA, ONN, AIWA",
+    "img": "/images/controles/LCD-615 PHILCO NOBLEX RCA ONN AIWA.jpeg"
+  },
+  {
+    "codigo": "LCD-618",
+    "marcas": "QUINT, HYUNDAI, QUANTIC, TEDGE",
+    "img": "/images/controles/LCD-618 QUINT HYUNDAI QUANTIC TEDGE.jpeg"
+  },
+  {
+    "codigo": "LCD-620",
+    "marcas": "PHILIPS",
+    "img": "/images/controles/LCD-620 PHILIPS.jpeg"
+  },
+  {
+    "codigo": "LCD-628",
+    "marcas": "TELEFUNKEN, TOP, HOUSE, KODAK, BGH",
+    "img": "/images/controles/LCD-628 TELEFUNKEN TOP HOUSE KODAK BGH.jpeg"
+  },
+  {
+    "codigo": "LCD-629",
+    "marcas": "TOP, HOUSE, TELEFUNKEN, SMARTLIFE, BGH, KODAK, DATSUN, IRT, KOGAN, RCA",
+    "img": "/images/controles/LCD-629 TOP HOUSE TELEFUNKEN SMARTLIFE BGH KODAK DATSUN IRT KOGAN RCA.jpeg"
+  },
+  {
+    "codigo": "LCD-631",
+    "marcas": "NOBLEX, DAIHATSU",
+    "img": "/images/controles/LCD-631 NOBLEX DAIHATSU.jpeg"
+  },
+  {
+    "codigo": "LCD-632",
+    "marcas": "KANJI, KODAK, CROWN, MUSTANG, OYILITY, CAIXUN, DINAX",
+    "img": "/images/controles/LCD-632 KANJI KODAK CROWN MUSTANG OYILITY CAIXUN DINAX.jpeg"
+  },
+  {
+    "codigo": "LCD-646",
+    "marcas": "AOC, NOBLEX",
+    "img": "/images/controles/LCD-646 AOC NOBLEX.jpeg"
+  },
+  {
+    "codigo": "LCD-660",
+    "marcas": "PHILIPS",
+    "img": "/images/controles/LCD-660 PHILIPS.jpeg"
+  },
+  {
+    "codigo": "LCD-670",
+    "marcas": "LG",
+    "img": "/images/controles/LCD-670 LG.jpeg"
+  },
+  {
+    "codigo": "SIN-931",
+    "marcas": "SMARTBOX, ANDROID, TV",
+    "img": "/images/controles/SIN-931 SMARTBOX ANDROID TV.jpeg"
+  },
+  {
+    "codigo": "SIN-931-2",
+    "marcas": "SMARTBOX, ANDROID, TV",
+    "img": "/images/controles/SIN-931-2 SMARTBOX ANDROID TV.jpeg"
+  }
+]

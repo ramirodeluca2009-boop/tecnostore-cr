@@ -1,11 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import accesoriosData from '../data/accesorios.json'
 
 const WHATSAPP = 'https://wa.me/5492974254894'
-
-function parseFilename(f) {
-  return { nombre: f.replace(/\.\w+$/, ''), img: `/images/accesorios/${f}` }
-}
 
 function Modal({ item, onClose }) {
   useEffect(() => {
@@ -37,14 +34,8 @@ function Modal({ item, onClose }) {
 }
 
 export default function Accesorios() {
-  const [items, setItems] = useState([])
+  const items = accesoriosData.map((a, i) => ({ id: i, ...a }))
   const [selected, setSelected] = useState(null)
-
-  useEffect(() => {
-    fetch('/api/accesorios').then(r => r.json())
-      .then(files => setItems(files.map((f, i) => ({ id: i, ...parseFilename(f) }))))
-      .catch(() => setItems([]))
-  }, [])
 
   return (
     <section className="w-full py-20 min-h-screen">
