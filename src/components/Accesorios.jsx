@@ -19,7 +19,7 @@ function Modal({ item, onClose }) {
         <button onClick={onClose} className="absolute top-3 right-3 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-black/40 text-white/60 hover:text-white cursor-pointer">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
         </button>
-        <div className="bg-white p-8"><img src={item.img} alt={item.nombre} className="w-full h-60 object-contain" /></div>
+        <div className="bg-neutral-800/50 p-8"><img src={item.img} alt={item.nombre} className="w-full h-60 object-contain" /></div>
         <div className="p-5">
           <p className="font-bold text-white text-lg mb-4">{item.nombre}</p>
           <a href={`${WHATSAPP}?text=${encodeURIComponent(`Hola! Me interesa ${item.nombre}. ¿Tienen stock?`)}`}
@@ -54,8 +54,8 @@ export default function Accesorios() {
               <motion.div key={item.id} initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.25, delay: Math.min(i * 0.03, 0.4) }}
                 whileHover={{ y: -5 }} whileTap={{ scale: 0.95 }} onClick={() => setSelected(item)}
-                className="bg-white rounded-xl overflow-hidden cursor-pointer hover:shadow-[0_0_20px_rgba(139,92,246,0.25)] border border-transparent hover:border-violet-500/30 transition-all duration-300">
-                <div className="p-4 pb-3"><img src={item.img} alt={item.nombre} className="w-full h-28 sm:h-32 object-contain" /></div>
+                className="bg-neutral-900 rounded-xl overflow-hidden cursor-pointer hover:shadow-[0_0_20px_rgba(139,92,246,0.25)] border border-neutral-800 hover:border-violet-500/30 transition-all duration-300">
+                <div className="p-4 pb-3 bg-neutral-800/50"><img src={item.img} alt={item.nombre} className="w-full h-28 sm:h-32 object-contain" /></div>
                 <div className="bg-neutral-900 px-3 py-3 border-t border-neutral-800">
                   <p className="font-bold text-white text-sm">{item.nombre}</p>
                 </div>
