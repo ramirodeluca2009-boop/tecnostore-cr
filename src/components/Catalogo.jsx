@@ -49,7 +49,7 @@ function Modal({ item, onClose }) {
             </div>
             <div className="flex gap-2.5 items-start">
               <span className="text-blue-400 mt-0.5">✦</span>
-              <p className="text-neutral-300"><span className="text-white font-medium">Envíos</span> a todo el país con Andreani</p>
+              <p className="text-neutral-300"><span className="text-white font-medium">Envíos</span> a todo el país con Correo Argentino</p>
             </div>
           </div>
 
